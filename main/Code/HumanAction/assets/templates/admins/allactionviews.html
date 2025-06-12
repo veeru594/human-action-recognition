@@ -1,0 +1,40 @@
+{% extends 'admins/adminbase.html'%}
+{%block contents%}
+
+ <section id="intro">
+
+    <div class="intro-text">
+
+      <p><h2 align="center">Light-Weight Deep Learning Model for Human 
+        Action Recognition in Videos</h2></p>
+        <div align="center">
+            <h3>Detected Actions</h3>
+              <table border="2px" class="table table-hover">
+                    <thead>
+                    <tr class="table-danger">
+                        <th scope="col">S.No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Actions</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for i in data %}
+                    <tr scope="row" style="color: BLUE; background-color:White">
+                        <td>{{forloop.counter}}</td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.email}}</td>
+                        <td>{{i.actions}}</td>
+                        <td>{{i.c_date}}</td>
+                    {% endfor %}
+
+
+                    </tbody>
+                </table>
+
+
+        </div>
+    </div>
+  </section>
+{%endblock%}

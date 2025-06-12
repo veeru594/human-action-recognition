@@ -1,0 +1,16 @@
+# Python & Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+*.log
+
+# Virtual Environment
+myenv/
+
+# VS Code settings
+.vscode/
+.idea/
+
+# Media files
+/media/

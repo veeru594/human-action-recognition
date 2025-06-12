@@ -1,0 +1,29 @@
+{% extends 'users/userbase.html'%}
+{%block contents%}
+
+ <section id="intro">
+
+    <div class="intro-text">
+
+      <p><h2 align="center">Light-Weight Deep Learning Model for Human 
+        Action Recognition in Videos</h2></p>
+         <form  action="{%url 'UserVideoProcess'%}" enctype="multipart/form-data" method="POST" align="center">
+{%csrf_token%}
+ <table>
+<div class="form-group row">
+<div class="col-md-12">
+<strong>Select an Video</strong>  <input type="file" name="file"  accept="video/mp4,video/x-m4v,video/*" required placeholder="Select an Video to Upload"><br/>
+</div>
+</div>
+<div class="form-group row">
+
+</div>
+
+<button class="btn  btn-primary text-white py-3 px-5" type="submit"> Upload</button>
+
+</table>
+</form>
+
+    </div>
+  </section>
+{%endblock%}
