@@ -1,8 +1,8 @@
-# Human Action Recognition 🎯🧠
+# Human Action Recognition 
 
 This project presents a lightweight deep learning model for **Human Action Recognition** using CNN-based architecture. The system can recognize actions from video sequences or image frames and is designed for performance and efficiency.
 
-## 📁 Project Structure
+##  Project Structure
 
 main/
 │
@@ -23,16 +23,16 @@ main/
 
 ## ⚙️ Features
 
-- Recognizes human actions in videos/images 🎥
-- Lightweight and optimized ResNet-34 ONNX model 🧠
-- Built with **Streamlit** for an interactive web app 🖥️
-- Clean UI and real-time classification ⏱️
+- Recognizes human actions in videos/images 
+- Lightweight and optimized ResNet-34 ONNX model 
+- Built with **Streamlit** for an interactive web app 🖥
+- Clean UI and real-time classification 
 
-## 🧠 Model
+##  Model
 
 We use the **ResNet-34 trained on Kinetics dataset**, exported as an ONNX model for efficient inference.
 
-## 🚀 How to Run
+##  How to Run
 
 1. **Clone the repo**:
    ```bash
