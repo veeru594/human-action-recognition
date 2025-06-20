@@ -7,3 +7,4 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: HumanAction.settings
+pythonVersion: 3.10.12
