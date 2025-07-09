@@ -1,3 +1,7 @@
+Django>=3.2
+gunicorn
+psycopg2-binary
+whitenoise
 setuptools>=65.5.1
 wheel>=0.38.4
 pip>=23.3.1

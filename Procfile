@@ -1,1 +1,1 @@
-web: gunicorn HumanAction.wsgi
+web: gunicorn your_project.wsgi
