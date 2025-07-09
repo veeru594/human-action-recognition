@@ -31,3 +31,4 @@ EXPOSE 8000
 
 # Start the server
 CMD gunicorn Code.HumanAction.wsgi:application --bind 0.0.0.0:$PORT
+
