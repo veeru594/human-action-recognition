@@ -4,11 +4,11 @@ import os
 import sys
 
 def main():
-    # 👇 Add the inner app directory to path
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'main', 'Code', 'HumanAction'))
+    # ✅ Add the correct parent folder to path
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'main', 'Code'))
 
-    # 👇 Correct DJANGO_SETTINGS_MODULE path
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'HumanAction.settings')
+    # ✅ Set correct settings path
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'HumanAction.HumanAction.settings')
 
     try:
         from django.core.management import execute_from_command_line
