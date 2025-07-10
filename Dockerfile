@@ -9,7 +9,8 @@ RUN apt-get update \
     && pip install -r requirements.txt
 
 # Copy all files
-COPY . /app/
+COPY ./main/Code /app/HumanAction
+
 
 # 👇 Set the correct DJANGO_SETTINGS_MODULE
 ENV DJANGO_SETTINGS_MODULE=HumanAction.HumanAction.settings
