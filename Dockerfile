@@ -13,7 +13,7 @@ COPY ./main/Code /app/HumanAction
 
 
 # 👇 Set the correct DJANGO_SETTINGS_MODULE
-ENV DJANGO_SETTINGS_MODULE=HumanAction.HumanAction.settings
+ENV DJANGO_SETTINGS_MODULE=Code.HumanAction.HumanAction.settings
 
 # 👇 Skip collectstatic temporarily (optional, to avoid breaking)
 RUN python manage.py collectstatic --noinput || true
