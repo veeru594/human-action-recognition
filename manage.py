@@ -3,9 +3,12 @@
 import os
 import sys
 
-
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Code.HumanAction.settings')
+    # Add the path to your 'Code' directory
+    sys.path.append(os.path.join(os.path.dirname(__file__), 'main', 'Code'))
+
+    # Set the correct settings module path
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'HumanAction.settings')
 
     try:
         from django.core.management import execute_from_command_line
@@ -15,8 +18,8 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
-    execute_from_command_line(sys.argv)
 
+    execute_from_command_line(sys.argv)
 
 if __name__ == '__main__':
     main()

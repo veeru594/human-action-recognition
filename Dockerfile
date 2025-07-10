@@ -18,11 +18,11 @@ RUN apt-get update \
 # Copy project
 COPY . /app/
 
-# Set Django settings module explicitly (VERY IMPORTANT)
-ENV DJANGO_SETTINGS_MODULE=Code.HumanAction.settings
+# Set Django settings module explicitly (corrected)
+ENV DJANGO_SETTINGS_MODULE=HumanAction.settings
 
-# Collect static files (optional, only if using staticfiles app)
+# Collect static files (allow failure during build)
 RUN python manage.py collectstatic --noinput || true
 
 # Run the application
-CMD gunicorn Code.HumanAction.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn HumanAction.wsgi:application --bind 0.0.0.0:$PORT
