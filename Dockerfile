@@ -13,10 +13,10 @@ COPY ./main/Code /app/HumanAction
 
 
 # 👇 Set the correct DJANGO_SETTINGS_MODULE
-ENV DJANGO_SETTINGS_MODULE=Code.HumanAction.settings
+ENV DJANGO_SETTINGS_MODULE=code.HumanAction.settings
 
 # 👇 Skip collectstatic temporarily (optional, to avoid breaking)
 RUN python manage.py collectstatic --noinput || true
 
 # 👇 WSGI run path updated properly
-CMD gunicorn Code.HumanAction.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn code.HumanAction.wsgi:application --bind 0.0.0.0:$PORT
