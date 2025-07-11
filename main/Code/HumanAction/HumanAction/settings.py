@@ -53,7 +53,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Code.HumanAction.HumanAction.wsgi.application'
+WSGI_APPLICATION = 'Code.HumanAction.wsgi.application'
 
 # Database (Default: SQLite — change to Railway PostgreSQL if needed)
 DATABASES = {

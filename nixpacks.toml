@@ -13,5 +13,5 @@ cmds = [
 ]
 
 [phases.start]
-gunicorn Code.HumanAction.HumanAction.wsgi:application --bind 0.0.0.0:${PORT:-8000}
+gunicorn Code.HumanAction.wsgi:application --bind 0.0.0.0:${PORT:-8000}
 

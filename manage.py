@@ -8,7 +8,7 @@ def main():
     sys.path.append(os.path.join(os.path.dirname(__file__), 'main', 'Code'))
 
     # ✅ Set correct settings path
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Code.HumanAction.HumanAction.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Code.HumanAction.settings')
 
     try:
         from django.core.management import execute_from_command_line
