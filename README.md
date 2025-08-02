@@ -148,11 +148,8 @@ This project uses **pre-trained models with transfer learning**:
 - Manual download of ONNX model required
 
 ---
+links
 
-## 👨‍💻 Author
-
-**Veerendra Kumar**  
-B.Tech Graduate (2025)  
 GitHub: [veeru594](https://github.com/veeru594)  
 LinkedIn: [Profile](https://www.linkedin.com/in/veerendra-kumar-7615b2347/)
 
